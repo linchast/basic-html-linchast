@@ -4,9 +4,11 @@ body {
 }
 h1{
   color: Yellow;
+  text-align: center;
 }
 h3{
   color: White;
+  text-align: center;
 }
 
 ul {
@@ -41,7 +43,7 @@ th, td {
 }
 
 #myheader{
-  color: black;
+  color: yellow;
   text-align: center;
   padding: 10px;
 }
