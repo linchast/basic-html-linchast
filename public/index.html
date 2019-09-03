@@ -3,7 +3,7 @@
 <head>
   <title>Home</title>
   <link rel="stylesheet" href="/css/site.css">
-  <!--#CSS:--><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <style>
 
@@ -40,12 +40,27 @@
   li a:hover {
     background-color: #111;
   }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+  }
 
-
+  #myheader{
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
 
   p{
     background-color: white;
     color: blue;
+    }
+
+    .img-fluid{
+      margin-left: 2%;
     }
   </style>
 
@@ -55,20 +70,15 @@
 <body>
 
 <ul>
-  <li><a class="active" href="#index.html">Home</a></li>
+  <li><a class="active" href="index.html">Home</a></li>
   <li><a href="information.html">Information</a></li>
-  <li><a href="#books.html">Books</a></li>
+  <li><a href="books.html">Books</a></li>
 </ul>
 
-<div class="row">
-  <div class="col-md-12"> <img src="C:\Users\Lindsey\Documents\GitHub\basic-html-linchast\public\IMG\one-tree-hill-brooke-davis-sophia-bush.jpg" class="img-fluid" alt="Responsive image">
+<div class = "Home">
+<h1> Hi, welcome to Lindsey's Website! </h1>
+<h3> Please explore the different pages listed above in the navigation bar. </h3>
 </div>
 
-  <div class="row">
-    <div class="col-md-3"> <h1> Name: </h1> <h3> Lindsey Chastain </h3> </div>
-    <div class="col-md-3"> <h1> Country: </h1> <h3> USA </h3> </div>
-    <div class="col-md-3"> <h1> Birthdate: </h1> <h3> July 31, 1997 </h3> </div>
-    <div class="col-md-3"> <h1> Email: </h1> <p> <a href="mailto:lindseychastain@iu.edu">LindseyChastain@iu.edu </a> </p> </div>
-  </div>
 </body>
 </html>
