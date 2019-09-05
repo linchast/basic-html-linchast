@@ -22,7 +22,7 @@
 </div>
   <br> </br>
 
-<table class="table table-striped">
+<table id = "tableShuffle" class="table table-striped">
   <thead class="thead-dark">
   <tr>
     <th scope="col"> Title </th>
@@ -32,6 +32,7 @@
     <th scope="col"> Page Count </th>
     <th scope="col"> MSRP </th>
   </tr>
+</thead>
   <tr>
     <td >The Hunger Games</td>
     <td>Suzanne Collins</td>
@@ -97,6 +98,12 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
+
+<script src='js/tablesort.min.js'> </script>
+<script>
+  new Tablesort(document.getElementById('tableShuffle'));
+</script>
+
 </body>
 
 </html>
