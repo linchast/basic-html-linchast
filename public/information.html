@@ -20,13 +20,24 @@
     Source: Google Picture
     </div>
 
-    <div class="row">
-      <div class="col-md-3"> <h2> Name: </h2> <h4> Lindsey Chastain </h4> </div>
-      <div class="col-md-3"> <h2> Country: </h2> <h4> USA </h4> </div>
-      <div class="col-md-3"> <h2> Birthdate: </h2> <h4> July 31, 1997 </h4> </div>
-      <div class="col-md-3"> <h2> Email: </h2> <p> <a href="mailto:lindseychastain@iu.edu">LindseyChastain@iu.edu </a> </p> </div>
-    </div>
 
+      <div class="container">
+        <div class="row">
+          <div id="patientWaitingApp" class="col-md-4 queueView">
+            <div class="patientWaiting patient">
+              <a v-bind:href="person.picture.large">
+                <img class= "img-fluid img-thumbnail" v-bind src = "person.picture.medium" ></a>
+              <span class="patientName">{{ person.name.last }}</span> <br>
+              <span class="patientName">{{ person.name.first }}</span><br>
+              <span class="patientName">{{ person.dob.date }}</span>
+              <span class="patientName">{{ person.dob.age }}</span>
+              <p> Country: France </p>
+              <p> Email: <a v-bind:href="'mailto: ' +person.email" target="_blank"> {{person.email}} </a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="js/waiting.app.js"></script>
 </body>
-
 </html>
