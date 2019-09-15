@@ -16,16 +16,16 @@
 
       <div class="container">
         <div class="row">
-          <div id="patientWaitingApp" class="col-md-4 queueView">
-            <div class="patientWaiting patient">
+          <div id="randomUser" class="col-md-4 queueView">
+            <div class="user">
               <a v-bind:href="person.picture.large">
-                <img class= "img-fluid img-thumbnail" v-bind:src = "person.picture.medium" ></a> <br>
-              <span class="patientName">{{ person.name.last }}</span> <br>
-              <span class="patientName">{{ person.name.first }}</span> <br>
-              <span class="patientName">{{ person.dob.date }}</span> <br>
-              <span class="patientName">{{ person.dob.age }}</span> <br>
-              <p> Country: France </p>
-              <p> Email: <a v-bind:href="'mailto: ' +person.email" target="_blank"> {{person.email}} </a></p>
+                <img class= "img-fluid img-thumbnail" v-bind:src = "person.picture.medium" ></a> <br> <br>
+              <span class="userName"><p> Last Name: {{ person.name.last }} </p></span> <br>
+              <span class="userName"><p> First Name: {{ person.name.first }} </p></span> <br>
+              <span class="userDOB"><p> Date of Birth: {{ person.dob.date }} </p></span> <br>
+              <span class="userAge"><p> Age: {{ person.dob.age }} </p> </span> <br>
+              <span class="userCountry"><p> Country: {{person.nat}} </p> </span> <br>
+              <span class="userEmail"><p> Email: <a v-bind:href="'mailto: ' +person.email" target="_blank"> {{person.email}} </a></p> </span> <br>
             </div>
           </div>
         </div>
