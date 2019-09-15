@@ -19,18 +19,18 @@
           <div id="patientWaitingApp" class="col-md-4 queueView">
             <div class="patientWaiting patient">
               <a v-bind:href="person.picture.large">
-                <img class= "img-fluid img-thumbnail" v-bind src = "person.picture.medium" ></a>
-              <span class="patientName">{{ person.name.last }}</span>
-              <span class="patientName">{{ person.name.first }}</span>
-              <span class="patientName">{{ person.dob.date }}</span>
-              <span class="patientName">{{ person.dob.age }}</span>
+                <img class= "img-fluid img-thumbnail" v-bind:src = "person.picture.medium" ></a> <br>
+              <span class="patientName">{{ person.name.last }}</span> <br>
+              <span class="patientName">{{ person.name.first }}</span> <br>
+              <span class="patientName">{{ person.dob.date }}</span> <br>
+              <span class="patientName">{{ person.dob.age }}</span> <br>
               <p> Country: France </p>
               <p> Email: <a v-bind:href="'mailto: ' +person.email" target="_blank"> {{person.email}} </a></p>
             </div>
           </div>
         </div>
-      </div>
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
       <script src="js/user.app.js"></script>
+        </div>
 </body>
 </html>
