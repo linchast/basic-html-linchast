@@ -1,12 +1,49 @@
 var userApp = new Vue({
   el: '#randomUser',
   data: {
-    person: [
-      {
+    person: {
+      "gender": "",
+      "name": {
+        "title": "",
+        "first": "",
+        "last": ""
+      },
+      "location": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "postcode": "",
+        "coordinates": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "timezone": {
+          "offset": "",
+          "description": ""
+        }
+      },
+      "email": "",
+      "login": {
+        "uuid": "",
+        "username": "",
+        "password": "",
+        "salt": "",
+        "md5": "",
+        "sha1": "",
+        "sha256": ""
+      },
+      "dob": {
+        "date": "",
+        "age": null
+      },
 
-      }
-
-    ]
+      "picture": {
+        "large": "",
+        "medium": "",
+        "thumbnail": ""
+      },
+      "nat": ""
+    }
   },
   methods: {
     fetchUser() {
